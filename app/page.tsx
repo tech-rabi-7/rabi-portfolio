@@ -20,6 +20,14 @@ export default function Home() {
             <a href="#skills" className="transition hover:text-white">
               Skills
             </a>
+            
+            <a href="#internships" className="transition hover:text-white">
+              Internships
+            </a>
+
+            <a href="#certificates" className="transition hover:text-white">
+              Certificates
+            </a>
 
             <a href="#projects" className="transition hover:text-white">
               Projects
@@ -244,7 +252,7 @@ export default function Home() {
     </div>
 
     {/* Skill Cards */}
-    <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-2 lg:grid-cols-3">
 
       {/* Programming */}
       <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-7 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40">
@@ -374,23 +382,234 @@ export default function Home() {
   </div>
 </section>
 
-      {/* Projects */}
-      <section
-        id="projects"
-        className="min-h-screen border-t border-white/10 px-6 py-32"
-      >
-        <div className="mx-auto max-w-6xl">
+      {/* Certificates */}
+<section
+  id="certificates"
+  className="border-t border-white/10 px-6 py-28"
+>
+  <div className="mx-auto max-w-6xl">
 
-          <p className="text-sm uppercase tracking-[0.3em] text-cyan-400">
-            03 / Projects
-          </p>
+    <p className="text-sm uppercase tracking-[0.3em] text-cyan-400">
+      04 / Certificates
+    </p>
 
-          <h2 className="mt-4 text-4xl font-bold">
-            Featured Projects
-          </h2>
+    <h2 className="mt-4 text-4xl font-bold sm:text-5xl">
+      Certifications &amp; <span className="text-cyan-400">Courses.</span>
+    </h2>
 
-        </div>
-      </section>
+    <p className="mt-5 max-w-2xl text-lg leading-8 text-gray-400">
+      Certifications and technical courses completed to strengthen my
+      programming and development skills.
+    </p>
+
+    <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+      {/* App Development */}
+      <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition hover:border-cyan-400/40">
+        <p className="text-sm text-cyan-400">Development</p>
+        <h3 className="mt-3 text-xl font-semibold">
+          App Development
+        </h3>
+        <a
+          href="/certificates/app_development.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-5 inline-block text-sm text-gray-400 transition hover:text-cyan-400"
+        >
+          View Certificate ↗
+        </a>
+      </div>
+
+      {/* C */}
+      <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition hover:border-cyan-400/40">
+        <p className="text-sm text-cyan-400">Programming</p>
+        <h3 className="mt-3 text-xl font-semibold">
+          C Programming
+        </h3>
+        <a
+          href="/certificates/c.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-5 inline-block text-sm text-gray-400 transition hover:text-cyan-400"
+        >
+          View Certificate ↗
+        </a>
+      </div>
+
+      {/* Java */}
+      <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition hover:border-cyan-400/40">
+        <p className="text-sm text-cyan-400">Programming</p>
+        <h3 className="mt-3 text-xl font-semibold">
+          Java Programming
+        </h3>
+        <a
+          href="/certificates/java.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-5 inline-block text-sm text-gray-400 transition hover:text-cyan-400"
+        >
+          View Certificate ↗
+        </a>
+      </div>
+
+      {/* Python */}
+      <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition hover:border-cyan-400/40">
+        <p className="text-sm text-cyan-400">Programming</p>
+        <h3 className="mt-3 text-xl font-semibold">
+          Python Programming
+        </h3>
+        <a
+          href="/certificates/python.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-5 inline-block text-sm text-gray-400 transition hover:text-cyan-400"
+        >
+          View Certificate ↗
+        </a>
+      </div>
+
+      {/* MERN */}
+      <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-6 transition hover:border-cyan-400/40">
+        <p className="text-sm text-cyan-400">Web Development</p>
+        <h3 className="mt-3 text-xl font-semibold">
+          MERN Full Stack
+        </h3>
+        <a
+          href="/certificates/MERN%20Full%20stack.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-5 inline-block text-sm text-gray-400 transition hover:text-cyan-400"
+        >
+          View Certificate ↗
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+      
+      {/* Internships */}
+<section
+  id="internships"
+  className="border-t border-white/10 px-6 py-28"
+>
+  <div className="mx-auto max-w-6xl">
+
+    <p className="text-sm uppercase tracking-[0.3em] text-cyan-400">
+      03 / Internships
+    </p>
+
+    <h2 className="mt-4 text-4xl font-bold sm:text-5xl">
+      Internship <span className="text-cyan-400">Experience.</span>
+    </h2>
+
+    <p className="mt-5 max-w-2xl text-lg leading-8 text-gray-400">
+      Virtual internships and practical learning experiences completed
+      across software development, artificial intelligence and cybersecurity.
+    </p>
+
+    <div className="mt-12 grid gap-6 md:grid-cols-2">
+
+      {/* AI-ML */}
+      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/40">
+        <p className="text-sm text-cyan-400">
+          AI / Machine Learning
+        </p>
+
+        <h3 className="mt-3 text-2xl font-semibold">
+          AI-ML Virtual Internship
+        </h3>
+
+        <p className="mt-3 text-gray-400">
+          10-week virtual internship completed during October–December 2025.
+        </p>
+
+        <a
+          href="/Internships/ai-ml.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-block rounded-full border border-cyan-400/40 px-5 py-2 text-sm transition hover:bg-cyan-400 hover:text-black"
+        >
+          View Certificate ↗
+        </a>
+      </div>
+
+      {/* Ethical Hacking */}
+      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/40">
+        <p className="text-sm text-cyan-400">
+          Cybersecurity
+        </p>
+
+        <h3 className="mt-3 text-2xl font-semibold">
+          Ethical Hacking Internship
+        </h3>
+
+        <p className="mt-3 text-gray-400">
+          8-week internship focused on ethical hacking and cybersecurity fundamentals.
+        </p>
+
+        <a
+          href="/Internships/ethical-hacking.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-block rounded-full border border-cyan-400/40 px-5 py-2 text-sm transition hover:bg-cyan-400 hover:text-black"
+        >
+          View Certificate ↗
+        </a>
+      </div>
+
+      {/* Python Full Stack */}
+      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/40">
+        <p className="text-sm text-cyan-400">
+          Full Stack Development
+        </p>
+
+        <h3 className="mt-3 text-2xl font-semibold">
+          Python Full Stack Internship
+        </h3>
+
+        <p className="mt-3 text-gray-400">
+          10-week internship covering Python, web development, Django, SQL and Git.
+        </p>
+
+        <a
+          href="/Internships/python-fullstack.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-block rounded-full border border-cyan-400/40 px-5 py-2 text-sm transition hover:bg-cyan-400 hover:text-black"
+        >
+          View Certificate ↗
+        </a>
+      </div>
+
+      {/* IBM SkillsBuild */}
+      <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-cyan-400/40">
+        <p className="text-sm text-cyan-400">
+          Artificial Intelligence
+        </p>
+
+        <h3 className="mt-3 text-2xl font-semibold">
+          IBM SkillsBuild Applied AI Internship
+        </h3>
+
+        <p className="mt-3 text-gray-400">
+          Applied AI internship focused on learning, designing and building with
+          Artificial Intelligence.
+        </p>
+
+        <a
+          href="/Internships/Completion_Certificate__SkillsBuild.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-block rounded-full border border-cyan-400/40 px-5 py-2 text-sm transition hover:bg-cyan-400 hover:text-black"
+        >
+          View Certificate ↗
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
       {/* Contact */}
