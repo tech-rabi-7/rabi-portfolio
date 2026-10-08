@@ -26,7 +26,7 @@ export const config = {
                 "Collaborating on code reviews, system debugging, and database schema refinement",
                 "Implementing reliable software design patterns following engineering best practices"
             ],
-            technologies: ["Software Engineering", "Full-Stack", "REST APIs", "SQL / Database", "Git"]
+            technologies: ["Software Engineering", "Backend Systems", "REST APIs", "SQL / Database", "Git"]
         },
         {
             position: "Software Engineer & Lead Developer",
@@ -179,7 +179,7 @@ export const config = {
     skills: {
         develop: {
             title: "SOFTWARE & WEB ENGINEERING",
-            description: "Scalable Full-Stack Architecture & Modern Interfaces",
+            description: "High-Performance Architecture & Modern Web Applications",
             details: "Building responsive, high-performance web applications with React, TypeScript, modern CSS, and clean RESTful API integration.",
             tools: ["React", "TypeScript", "JavaScript", "TailwindCSS", "Node.js", "Express.js", "HTML5/CSS3", "REST APIs", "Three.js", "Git"]
         },
