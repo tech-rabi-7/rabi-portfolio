@@ -13,8 +13,8 @@ export default function JarvisCore() {
     if (!container) return;
 
     // 1. Scene, Camera, Renderer
-    const width = container.clientWidth || 400;
-    const height = container.clientHeight || 450;
+    const width = container.clientWidth > 0 ? container.clientWidth : (container.parentElement?.clientWidth || 420);
+    const height = container.clientHeight > 0 ? container.clientHeight : 440;
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 1000);
@@ -26,7 +26,7 @@ export default function JarvisCore() {
       powerPreference: "high-performance",
     });
     renderer.setSize(width, height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setPixelRatio(Math.min(typeof window !== "undefined" ? window.devicePixelRatio : 1, 2));
     container.appendChild(renderer.domElement);
 
     // 2. Lights
@@ -191,11 +191,13 @@ export default function JarvisCore() {
     // Resize Handler
     const handleResize = () => {
       if (!container) return;
-      const newWidth = container.clientWidth;
-      const newHeight = container.clientHeight;
-      camera.aspect = newWidth / newHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(newWidth, newHeight);
+      const newWidth = container.clientWidth > 0 ? container.clientWidth : (container.parentElement?.clientWidth || 420);
+      const newHeight = container.clientHeight > 0 ? container.clientHeight : 440;
+      if (newHeight > 0) {
+        camera.aspect = newWidth / newHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(newWidth, newHeight);
+      }
     };
 
     window.addEventListener("resize", handleResize);
@@ -315,7 +317,7 @@ export default function JarvisCore() {
       {/* Three.js Canvas Container */}
       <div
         ref={containerRef}
-        className="w-full h-full relative z-0"
+        className="w-full h-[420px] sm:h-[460px] min-h-[380px] relative z-0 flex items-center justify-center"
         title="Interactive JARVIS Arc Reactor — Hover or Move Mouse to Pivot 3D Core"
       />
     </div>
