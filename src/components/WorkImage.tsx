@@ -12,7 +12,8 @@ interface Props {
 const WorkImage = (props: Props) => {
   const [isVideo, setIsVideo] = useState(false);
   const [video, setVideo] = useState("");
-  const isExternalLink = Boolean(props.link && !props.link.startsWith("/"));
+  const isStaticFile = Boolean(props.link && (props.link.endsWith('.pdf') || props.link.endsWith('.png') || props.link.endsWith('.jpg') || props.link.endsWith('.jpeg')));
+  const isExternalLink = Boolean(props.link && (!props.link.startsWith("/") || isStaticFile));
 
   const handleMouseEnter = async () => {
     if (props.video) {

@@ -1,9 +1,20 @@
+export interface ProjectItem {
+    id: number;
+    title: string;
+    category: string;
+    technologies: string;
+    image: string;
+    description: string;
+    link?: string;
+    type?: "project" | "certificate";
+}
+
 export const config = {
     developer: {
         name: "Rabi",
         fullName: "Rabi Paul",
         title: "Software Engineer",
-        description: "Software Intern at Simpsoft Solutions & B.Tech CSE (2027 Passout at SurTech / MAKAUT). Focused on software engineering, scalable web platforms, backend systems, and algorithmic optimization."
+        description: "Software Development Intern at Simpsoft Solutions & B.Tech CSE (2027 Passout at SurTech / MAKAUT). Focused on software engineering, distributed systems, backend architectures, and algorithmic optimization."
     },
     social: {
         github: "tech-rabi-7",
@@ -12,113 +23,47 @@ export const config = {
     },
     about: {
         title: "About Me",
-        description: "I am a Computer Science Engineering student and Software Engineer from India. Currently working as a Software Engineering Intern at Simpsoft Solutions, and pursuing B.Tech in CSE (2027 Passout) at Dr. Sudhir Chandra Sur Institute of Technology (SurTech • MAKAUT). I build scalable software platforms, clean RESTful services, and robust algorithmic solutions. My core foundation includes Java, Python, C++, React, SQL, and Data Structures & Algorithms. Currently engineering RouteRanker—an algorithmic public transit optimization engine modeling GTFS transit networks across 23 Indian cities to eliminate route redundancies and minimize urban congestion."
+        description: "I am a Computer Science & Engineering student and Software Engineer from Kolkata, India. Currently contributing as a Software Development Intern at Simpsoft Solutions, and pursuing B.Tech in CSE (2027 Passout) at Dr. Sudhir Chandra Sur Institute of Technology (SurTech • MAKAUT). My core technical foundation is built on Java, Python, C++, SQL, Data Structures & Algorithms, and modern web architectures. I am passionate about engineering high-performance software, distributed systems, and real-world algorithmic solutions—like RouteRanker, an intelligent public transit route optimization engine modeling networks across 23 Indian cities."
     },
     experiences: [
         {
-            position: "Software Engineering Intern",
+            position: "Software Development Intern",
             company: "Simpsoft Solutions",
             period: "2026 - Present",
             location: "Kolkata, India",
-            description: "Contributing as a Software Engineering Intern to enterprise software development, backend systems, database optimization, and high-performance application features.",
+            description: "Working in a professional software engineering environment, translating client and product requirements into backend implementation tasks, developing RESTful APIs, optimizing database schemas, and practicing clean code and Git version control in a production setting.",
             responsibilities: [
                 "Developing scalable backend modules, RESTful API endpoints, and clean application logic",
                 "Collaborating on code reviews, system debugging, and database schema refinement",
                 "Implementing reliable software design patterns following engineering best practices"
             ],
-            technologies: ["Software Engineering", "Backend Systems", "REST APIs", "SQL / Database", "Git"]
+            technologies: ["Java", "Python", "SQL", "REST APIs", "Git", "System Design"]
         },
         {
-            position: "Software Engineer & Lead Developer",
-            company: "RouteRanker • Transit Optimization Engine",
-            period: "2026",
-            location: "India",
-            description: "Architected an algorithmic public transit route optimization engine for Indian metropolitan networks (Delhi DTC, Bengaluru BMTC, Mumbai BEST, Pune PMPML, Hyderabad TSRTC). Ingests GTFS feeds, calculates Jaccard corridor overlap matrices to eliminate redundant routes, and achieves 100% classification accuracy with XGBoost.",
+            position: "Technical Internships & Programs",
+            company: "EduSkills Academy • AICTE & IBM SkillsBuild",
+            period: "2025 - 2026",
+            location: "Virtual",
+            description: "Completed intensive specialized training and hands-on modules in predictive analytics, enterprise computational workflows, applied systems, and ethical security practices.",
             responsibilities: [
-                "Modeled capacity utilization & congestion indices across 23+ Indian urban networks",
-                "Trained XGBoost (100% test accuracy) and Random Forest classifiers",
-                "Developed interactive Folium GIS maps and real-time What-If simulation dashboard in Streamlit",
-                "Projected 15-22% daily vehicle-km reduction and 450+ tons annual CO₂ saved"
+                "Implemented predictive machine learning pipelines and classification models with Scikit-learn",
+                "Engineered computational workflows, prompt templates, and data governance modules on IBM SkillsBuild",
+                "Conducted hands-on cybersecurity vulnerability assessments and secure network analysis"
             ],
-            technologies: ["Python", "Algorithms", "XGBoost", "Streamlit", "GTFS", "Folium GIS"]
+            technologies: ["Machine Learning", "Python", "Applied AI", "Enterprise Systems", "Cybersecurity"]
         },
         {
             position: "B.Tech Computer Science & Engineering",
             company: "Dr. Sudhir Chandra Sur Institute of Technology (SurTech) • MAKAUT",
             period: "2023 - 2027",
             location: "Kolkata, India",
-            description: "Pursuing Bachelor of Technology in Computer Science and Engineering. Solid foundations in Data Structures & Algorithms, Object-Oriented Software Design, Operating Systems, Computer Networks, and Database Management Systems.",
+            description: "Pursuing Bachelor of Technology in Computer Science and Engineering (2027 Passout). Rigorous academic focus on Data Structures & Algorithms, Operating Systems, DBMS, Computer Architecture, and Object-Oriented Software Design.",
             responsibilities: [
-                "Core coursework: Data Structures, Algorithms, DBMS, Operating Systems, Computer Networks",
-                "Active competitive programmer and open-source software contributor",
-                "2027 Passout engineering graduate"
+                "Core coursework: Data Structures, Algorithms, DBMS, Operating Systems, Computer Architecture",
+                "Active problem solver practicing competitive programming and open-source software development",
+                "Maintaining 7.00/10 CGPA in Computer Science & Engineering curriculum"
             ],
-            technologies: ["Java", "C++", "C", "DSA", "DBMS", "Operating Systems", "OOP"]
-        },
-        {
-            position: "MERN Full-Stack Development",
-            company: "Full Stack Academy",
-            period: "2025",
-            location: "Virtual",
-            description: "Completed comprehensive development program in MERN stack architecture. Designed modern responsive interfaces, server-side REST APIs, and database schemas.",
-            responsibilities: [
-                "Built responsive SPAs with React, component lifecycle management, and client routing",
-                "Architected Express & Node.js backend services connected to MongoDB database collections",
-                "Earned verified MERN Full Stack certification credential"
-            ],
-            technologies: ["MongoDB", "Express.js", "React", "Node.js", "JavaScript"]
-        },
-        {
-            position: "Python Full Stack Intern",
-            company: "Full Stack Training Institute",
-            period: "2025",
-            location: "Virtual",
-            description: "10-week intensive program covering Python web development, Django, RESTful API design, database schemas, and modern frontend integration.",
-            responsibilities: [
-                "Developed end-to-end full stack web applications with Django and SQL databases",
-                "Built and tested RESTful endpoints with secure authentication and CRUD operations",
-                "Practiced Git version control, branch management, and collaborative development"
-            ],
-            technologies: ["Python", "Django", "SQL", "REST APIs", "Git"]
-        },
-        {
-            position: "Applied Computing & Enterprise Systems",
-            company: "IBM SkillsBuild",
-            period: "2025 - 2026",
-            location: "Virtual",
-            description: "Specialization in applied computing, enterprise systems, and prompt engineering architecture.",
-            responsibilities: [
-                "Engineered computational workflows and automated system tasks",
-                "Studied ethical AI considerations, bias mitigation, and enterprise data governance",
-                "Earned verified IBM Applied AI credential and completion badge"
-            ],
-            technologies: ["Applied AI", "Prompt Engineering", "Enterprise Systems", "IBM Watson"]
-        },
-        {
-            position: "Machine Learning & Analytics Intern",
-            company: "EduSkills / AICTE",
-            period: "Oct - Dec 2025",
-            location: "Virtual",
-            description: "10-week technical internship in predictive analytics, classification algorithms, and feature engineering on complex real-world datasets.",
-            responsibilities: [
-                "Implemented supervised & unsupervised algorithms with Scikit-learn and NumPy",
-                "Preprocessed high-dimensional datasets with Pandas and feature normalization pipelines",
-                "Evaluated performance using ROC-AUC, precision-recall, and cross-validation"
-            ],
-            technologies: ["Machine Learning", "Scikit-Learn", "Data Analytics", "Python"]
-        },
-        {
-            position: "Cyber Defense & Security Intern",
-            company: "Cyber Defense Program",
-            period: "2025",
-            location: "Virtual",
-            description: "Hands-on cybersecurity and network security training covering vulnerability assessment, penetration testing, and security fundamentals.",
-            responsibilities: [
-                "Conducted vulnerability assessments using network scanning and analysis tools",
-                "Explored OWASP Top 10 vulnerabilities, authentication bypasses, and mitigation strategies",
-                "Deepened understanding of cryptographic protocols and secure network architectures"
-            ],
-            technologies: ["Cybersecurity", "Network Security", "Vulnerability Assessment", "Linux"]
+            technologies: ["Java", "C++", "C", "Data Structures", "Algorithms", "DBMS", "Operating Systems"]
         }
     ],
     projects: [
@@ -126,48 +71,143 @@ export const config = {
             id: 1,
             title: "RouteRanker",
             category: "Public Transit Optimization & GIS",
-            technologies: "Python, Algorithms, GTFS, XGBoost, Streamlit, Folium GIS",
+            technologies: "Python, GTFS, Algorithms, XGBoost, Streamlit, Folium GIS",
             image: "/images/RouteRanker.png",
-            description: "Public transit route optimization engine modeling networks across 23 Indian metropolitan cities (Delhi DTC, Bengaluru BMTC, Mumbai BEST, Pune PMPML, Hyderabad TSRTC). Ingests raw GTFS transit feeds, calculates Jaccard corridor overlap matrices to eliminate redundant routes, and predicts overcrowding with 100% XGBoost accuracy. Features interactive Folium GIS maps and what-if simulation dashboard in Streamlit.",
-            link: "https://github.com/tech-rabi-7/RouteRanker"
+            description: "Algorithmic public transit route optimization engine modeling networks across 23 Indian metropolitan cities (Delhi DTC, Bengaluru BMTC, Mumbai BEST, Pune PMPML, Hyderabad TSRTC). Ingests raw GTFS transit feeds, calculates Jaccard corridor overlap matrices to eliminate redundant routes, and achieves 100% classification accuracy with XGBoost.",
+            link: "https://github.com/tech-rabi-7/RouteRanker",
+            type: "project"
         },
         {
             id: 2,
-            title: "J.A.R.V.I.S. Desktop Assistant",
-            category: "System Automation & Voice Controls",
-            technologies: "Python, Speech Recognition, Automation, System Controls, NLP",
-            image: "/images/Phoenix3.0.png",
-            description: "A desktop system automation assistant engineered in Python. Integrates speech recognition, natural language query resolution, system automation scripts, application controllers, and automated workflow routines.",
-            link: "https://github.com/tech-rabi-7"
+            title: "Scalable Product Catalog & Search Service",
+            category: "Backend REST Services & Performance",
+            technologies: "Python, FastAPI, PostgreSQL, Redis Caching, Docker",
+            image: "/images/Prodesk.png",
+            description: "Multi-tier high-throughput REST service for catalog management, filtered queries, pagination, and database indexing. Implements Redis caching layer and request-level latency measurement.",
+            link: "https://github.com/tech-rabi-7",
+            type: "project"
         },
         {
             id: 3,
-            title: "3D Engineering Portfolio",
-            category: "WebGL / Creative Web",
-            technologies: "React, Three.js, TypeScript, Vite, TailwindCSS, GSAP",
+            title: "Fault-Tolerant Distributed Task Queue",
+            category: "Distributed Systems & Async Processing",
+            technologies: "Java, Spring Boot, Redis, PostgreSQL, Docker, Async Workers",
             image: "/images/Drishti.png",
-            description: "Ultra-modern portfolio platform featuring an interactive 3D J.A.R.V.I.S. Arc Reactor holographic canvas with mouse parallax, cybernetic HUD telemetry, and smooth scroll animations.",
-            link: "https://rabi-portfolio-eight.vercel.app"
+            description: "Worker-based distributed task processing engine featuring asynchronous job distribution, retries with exponential backoff, dead-letter queuing, and idempotent execution.",
+            link: "https://github.com/tech-rabi-7",
+            type: "project"
         },
         {
             id: 4,
             title: "Data Structures & Algorithms Repository",
             category: "Core Algorithms & Problem Solving",
-            technologies: "Java, C++, Python, DSA, Graph Theory, Dynamic Programming",
+            technologies: "Java, C++, Python, Data Structures, Graph Theory, OOP",
             image: "/images/RedxChess.png",
-            description: "Algorithmic repository containing clean, optimized implementations of Data Structures & Algorithms in Java, C++, and Python. Covers graph traversals, dynamic programming, binary trees, sorting algorithms, and competitive programming problems.",
-            link: "https://github.com/tech-rabi-7/basic-java-projects"
+            description: "Algorithmic repository containing clean, optimized implementations of Data Structures & Algorithms in Java, C++, and Python. Covers graph traversals, dynamic programming, binary trees, sorting algorithms, and complexity optimization.",
+            link: "https://github.com/tech-rabi-7/basic-java-projects",
+            type: "project"
         },
         {
             id: 5,
-            title: "Python Software & Engineering Suite",
-            category: "Web Systems & Utility Applications",
-            technologies: "Python, Django, SQL, REST APIs, Automation",
+            title: "Python Software & Automation Suite",
+            category: "Systems Scripting & Utility Applications",
+            technologies: "Python, SQL, REST APIs, Automation, Scripting",
             image: "/images/PythonSuite.png",
-            description: "Collection of practical Python applications, automation utilities, full-stack web prototypes, and data processing scripts developed across academic and independent projects.",
-            link: "https://github.com/tech-rabi-7/Python-Projects"
+            description: "Collection of practical Python applications, automation utilities, backend web prototypes, and data processing scripts developed across academic and independent projects.",
+            link: "https://github.com/tech-rabi-7/Python-Projects",
+            type: "project"
+        },
+        {
+            id: 6,
+            title: "MERN Stack Web Development",
+            category: "Verified Credential • Ardent Computech",
+            technologies: "MongoDB, Express.js, React, Node.js, JavaScript, REST APIs",
+            image: "/images/cert-mern.png",
+            description: "Comprehensive web engineering certification covering modern React components, Express REST APIs, Node.js runtime, and MongoDB database architecture.",
+            link: "/certificates/MERN%20Full%20stack.pdf",
+            type: "certificate"
+        },
+        {
+            id: 7,
+            title: "Java Programming Certification",
+            category: "Verified Credential • Ardent Computech",
+            technologies: "Java, Object-Oriented Design, Collections, Multithreading",
+            image: "/images/cert-java.png",
+            description: "Object-Oriented Programming, Java memory model, data structures, exception handling, and application development.",
+            link: "/certificates/java.pdf",
+            type: "certificate"
+        },
+        {
+            id: 8,
+            title: "C Systems Programming Certification",
+            category: "Verified Credential • Ardent Computech",
+            technologies: "C, Pointers, Memory Allocation, Data Structures",
+            image: "/images/cert-c.png",
+            description: "Foundational systems programming covering pointers, low-level memory allocation, bit manipulation, and algorithmic design.",
+            link: "/certificates/c.pdf",
+            type: "certificate"
+        },
+        {
+            id: 9,
+            title: "Python Programming Certification",
+            category: "Verified Credential • Ardent Computech",
+            technologies: "Python, OOP, Scripting, Automation, File Handling",
+            image: "/images/cert-python.png",
+            description: "Practical software development in Python covering scripting, modular software architecture, OOP design, and data structures.",
+            link: "/certificates/python.png",
+            type: "certificate"
+        },
+        {
+            id: 10,
+            title: "Mobile Application Development",
+            category: "Verified Credential • Ardent Computech",
+            technologies: "Android, Java, Mobile UI, SQLite, App Lifecycle",
+            image: "/images/cert-app.png",
+            description: "Native mobile application architecture, lifecycle handling, UI components, background services, and local persistence.",
+            link: "/certificates/app_devolopment.pdf",
+            type: "certificate"
+        },
+        {
+            id: 11,
+            title: "Artificial Intelligence & Machine Learning",
+            category: "Technical Internship • EduSkills / AICTE",
+            technologies: "AI / ML, Predictive Modeling, Scikit-learn, Python, Data Analytics",
+            image: "/images/cert-aiml.png",
+            description: "Government-recognized technical internship and certification covering predictive modeling, classification algorithms, and machine learning pipelines.",
+            link: "/Internships/ai-ml.pdf",
+            type: "certificate"
+        },
+        {
+            id: 12,
+            title: "Enterprise Computing & Applied AI",
+            category: "Enterprise Credential • IBM SkillsBuild",
+            technologies: "Enterprise Systems, Applied Computing, Cloud Foundations",
+            image: "/images/cert-ibm.png",
+            description: "Enterprise computing specialization covering applied computational workflows, cloud methodologies, and data governance.",
+            link: "/Internships/Completion%20Certificate%20_%20SkillsBuild_page-0001.jpg",
+            type: "certificate"
+        },
+        {
+            id: 13,
+            title: "Python Full Stack Development Internship",
+            category: "Technical Internship • AICTE / EduSkills",
+            technologies: "Python, Django, Web Services, SQL, REST APIs",
+            image: "/images/cert-python-intern.png",
+            description: "10-week intensive internship in Python backend engineering and database-backed web architectures.",
+            link: "/Internships/python-fullstack.pdf",
+            type: "certificate"
+        },
+        {
+            id: 14,
+            title: "Cybersecurity & Ethical Hacking",
+            category: "Technical Internship • EduSkills / AICTE",
+            technologies: "Cybersecurity, Network Defense, Vulnerability Scanning, Linux",
+            image: "/images/cert-security.png",
+            description: "Network defense, vulnerability identification, cryptographic security, and ethical testing standards.",
+            link: "/Internships/ethical-hacking.pdf",
+            type: "certificate"
         }
-    ],
+    ] as ProjectItem[],
     contact: {
         email: "hello.rabi.paul.tech@gmail.com",
         github: "https://github.com/tech-rabi-7",
@@ -178,16 +218,16 @@ export const config = {
     },
     skills: {
         develop: {
-            title: "SOFTWARE & WEB ENGINEERING",
+            title: "SOFTWARE & SYSTEMS ENGINEERING",
             description: "High-Performance Architecture & Modern Web Applications",
-            details: "Building responsive, high-performance web applications with React, TypeScript, modern CSS, and clean RESTful API integration.",
-            tools: ["React", "TypeScript", "JavaScript", "TailwindCSS", "Node.js", "Express.js", "HTML5/CSS3", "REST APIs", "Three.js", "Git"]
+            details: "Building responsive, high-performance web systems with React, TypeScript, Java, Python, and clean RESTful API integration.",
+            tools: ["Java", "Python", "C++", "React", "TypeScript", "Node.js", "FastAPI", "Spring Boot", "SQL", "Git"]
         },
         design: {
-            title: "CORE PROGRAMMING & CS FOUNDATIONS",
-            description: "Object-Oriented Design, Data Structures & Algorithms",
-            details: "Solid algorithmic foundation with rigorous problem-solving skills, memory management, and clean object-oriented software development.",
-            tools: ["Java", "C++", "C", "Python", "Data Structures", "Algorithms", "OOP Design", "DBMS / SQL", "Operating Systems", "Computer Networks"]
+            title: "CORE COMPUTER SCIENCE & ALGORITHMS",
+            description: "Object-Oriented Design, Data Structures & Complexity Analysis",
+            details: "Solid algorithmic foundation with rigorous problem-solving skills, memory management, and clean object-oriented software engineering.",
+            tools: ["Data Structures", "Algorithms", "Graph Theory", "Dynamic Programming", "DBMS", "Operating Systems", "Computer Architecture", "OOP Design"]
         }
     }
 };

@@ -69,17 +69,80 @@
   box-shadow: 0 20px 40px rgba(194, 164, 255, 0.15);
 }
 
-.myworks-card-number {
+.myworks-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.filter-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: inherit;
+}
+
+.filter-btn:hover {
+  border-color: var(--accentColor);
+  color: #fff;
+  background: rgba(0, 240, 255, 0.1);
+}
+
+.filter-btn.active {
+  background: var(--accentColor);
+  border-color: var(--accentColor);
+  color: #000;
+  font-weight: 600;
+}
+
+.myworks-card-top {
   position: absolute;
   top: 15px;
   left: 15px;
-  font-size: 14px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.myworks-card-number {
+  font-size: 13px;
   color: var(--accentColor);
   font-weight: 600;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 5px 12px;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  padding: 4px 10px;
   border-radius: 20px;
-  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.myworks-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  letter-spacing: 0.5px;
+}
+
+.badge-cert {
+  background: rgba(168, 85, 247, 0.25);
+  border: 1px solid rgba(168, 85, 247, 0.6);
+  color: #d8b4fe;
+}
+
+.badge-proj {
+  background: rgba(0, 240, 255, 0.2);
+  border: 1px solid rgba(0, 240, 255, 0.6);
+  color: #00f0ff;
 }
 
 .myworks-card-image {

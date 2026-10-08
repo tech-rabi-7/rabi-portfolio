@@ -76,29 +76,15 @@ const Navbar = () => {
         >
           hello.rabi.paul.tech@gmail.com
         </a>
-        <div
-          className="navbar-badge"
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "8px",
-            padding: "5px 14px",
-            borderRadius: "9999px",
-            background: "rgba(0, 240, 255, 0.08)",
-            border: "1px solid rgba(0, 240, 255, 0.3)",
-            fontSize: "11px",
-            fontFamily: "monospace",
-            color: "#00f0ff",
-            letterSpacing: "0.5px"
-          }}
-        >
-          <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#4ade80", boxShadow: "0 0 8px #4ade80" }}></span>
-          <span>Software Intern @ Simpsoft Solutions • 2027 Passout</span>
-        </div>
         <ul>
           <li>
             <a data-href="#about" href="#about">
               <HoverLinks text="ABOUT" />
+            </a>
+          </li>
+          <li>
+            <a data-href="#experience" href="#experience">
+              <HoverLinks text="EXPERIENCE" />
             </a>
           </li>
           <li>
