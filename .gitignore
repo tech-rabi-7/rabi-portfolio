@@ -40,5 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# cloned reference
+# cloned reference & backup
 portfolio-website/
+_next_app_backup/
+dist/
