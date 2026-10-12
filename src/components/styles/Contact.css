@@ -1,0 +1,214 @@
+.contact-section {
+  margin: auto;
+  padding-bottom: 150px;
+  margin-top: 0;
+  position: relative;
+  z-index: 1;
+  background-color: var(--backgroundColor);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Horizontal Sliding Name Banner (Work-style slide) */
+.contact-name-slider {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+  padding: 35px 0 25px;
+  background: linear-gradient(180deg, rgba(3, 7, 18, 0) 0%, rgba(0, 240, 255, 0.04) 50%, rgba(3, 7, 18, 0) 100%);
+  border-top: 1px solid rgba(0, 240, 255, 0.12);
+  border-bottom: 1px solid rgba(0, 240, 255, 0.12);
+  margin-bottom: 45px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.contact-slider-track {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.contact-slider-text {
+  font-family: "Geist", sans-serif;
+  font-size: clamp(42px, 8vw, 110px);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1;
+  padding: 0 10px;
+}
+
+.contact-slider-glow {
+  color: #00f0ff;
+  background: linear-gradient(135deg, #00f0ff 0%, #38bdf8 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(0, 240, 255, 0.4));
+}
+
+.contact-slider-stroke {
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(0, 240, 255, 0.6);
+}
+
+.contact-slider-dot {
+  font-size: clamp(20px, 3.5vw, 42px);
+  color: #00f0ff;
+  margin: 0 20px;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.6));
+}
+
+.contact-slider-track-sub {
+  margin-top: 8px;
+}
+
+.contact-slider-sub {
+  font-family: "Geist", monospace, sans-serif;
+  font-size: clamp(13px, 1.8vw, 22px);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 0 12px;
+}
+
+.contact-slider-sub-dot {
+  color: rgba(0, 240, 255, 0.6);
+  font-size: 18px;
+  margin: 0 12px;
+}
+.contact-section h3 {
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.contact-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-flex h4 {
+  font-weight: 500;
+  margin: 0;
+  opacity: 0.6;
+  font-size: 14px;
+}
+.contact-box {
+  display: flex;
+  flex-direction: column;
+}
+.contact-flex p {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+a.contact-social {
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 8px;
+}
+.contact-box h2 {
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  line-height: 22px;
+}
+.contact-box h2 > span {
+  color: var(--accentColor);
+}
+.contact-box h5 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  display: flex;
+  gap: 8px;
+  opacity: 0.5;
+}
+@media only screen and (min-width: 600px) {
+  .contact-section h3 {
+    font-size: 40px;
+  }
+  .contact-box h2 {
+    font-size: 18px;
+  }
+  a.contact-social {
+    font-size: 18px;
+  }
+  .contact-flex h4 {
+    font-size: 15px;
+  }
+  .contact-flex p {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .contact-section h3 {
+    font-size: 48px;
+  }
+  .contact-box h2 {
+    font-size: 20px;
+  }
+  a.contact-social {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .contact-section h3 {
+    font-size: 55px;
+  }
+  .contact-box h2 {
+    font-size: 22px;
+  }
+  a.contact-social {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .contact-section h3 {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+  .contact-box h2 {
+    font-size: 23px;
+  }
+  a.contact-social {
+    font-size: 25px;
+  }
+  .contact-flex p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .contact-box h5 {
+    font-size: 20px;
+    line-height: 20px;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contact-flex {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .contact-flex p {
+    margin-bottom: 0px;
+  }
+  .contact-flex h4 {
+    margin-top: 20px;
+  }
+  .contact-section {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact-container {
+    width: calc(100% - 25px);
+  }
+}
